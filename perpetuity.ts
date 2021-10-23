@@ -1,20 +1,20 @@
-import round from './round.ts'
+import round from "./round.ts";
 // (FCF * (1 + g%)) / (d% - g%)
 
-function perpetuityGrowth (
+function perpetuityGrowth(
   baseValue: number,
   growthRatePct: number,
-  discountRatePct: number
+  discountRatePct: number,
 ) {
   if (growthRatePct > discountRatePct) {
-    throw new Error('growth rate should be smaller than discount rate')
+    throw new Error("growth rate should be smaller than discount rate");
   }
 
-  const n = baseValue * (1 + growthRatePct)
-  const d = discountRatePct - growthRatePct
-  const value = round((n / d), 9)
+  const n = baseValue * (1 + growthRatePct);
+  const d = discountRatePct - growthRatePct;
+  const value = round(n / d, 9);
 
-  return value
+  return value;
 }
 
-export default perpetuityGrowth
+export default perpetuityGrowth;

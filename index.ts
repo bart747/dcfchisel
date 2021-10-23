@@ -1,6 +1,6 @@
-import DCF from './dcf.ts'
+import DCF from "./dcf.ts";
 
-import { growthArr, declineArr } from './arrays.ts'
-import perpetuityGrowth from './perpetuity.ts'
+import { declineArr, growthArr } from "./arrays.ts";
+import perpetuityGrowth from "./perpetuity.ts";
 
-export { DCF, growthArr, declineArr, perpetuityGrowth }
+export { DCF, declineArr, growthArr, perpetuityGrowth };
