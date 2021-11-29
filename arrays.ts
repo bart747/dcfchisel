@@ -19,7 +19,7 @@ function growthArr(
   startVal: number,
   growthRatePct: number,
   length: number,
-) {
+): number[] {
   const arr: number[] = [];
   const growthRate = 1 + growthRatePct;
   collect(arr, startVal, growthRate, length);
@@ -30,7 +30,7 @@ function declineArr(
   startVal: number,
   declineRatePct: number,
   length: number,
-) {
+): number[] {
   const arr: number[] = [];
   const declineRate = 1 - declineRatePct;
   collect(arr, startVal, declineRate, length);

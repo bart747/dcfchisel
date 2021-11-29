@@ -5,7 +5,7 @@ function perpetuityGrowth(
   baseValue: number,
   growthRatePct: number,
   discountRatePct: number,
-) {
+): number {
   if (growthRatePct > discountRatePct) {
     throw new Error("growth rate should be smaller than discount rate");
   }
